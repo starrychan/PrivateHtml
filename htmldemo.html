@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>timeline</title>
+		<style>
+		body,li,ul{
+			padding: 0;
+			margin: 0;
+		}
+		ul,li{
+			list-style: none;
+		}
+		.wrapper{
+			width: 1000px;
+			margin: 0 auto;
+			position: relative;
+		}
+		.timeline li{
+			position: relative;
+			height: auto;
+			width: auto;
+		}
+		.timeline:before{
+			content: '';
+			position: absolute;
+			width: 10px;
+			height: 100%;
+			background-color: #6cbfee;
+			left: 150px;
+			top: 2px;
+		}
+		.timedata{
+			width: 100px;
+			position: absolute;
+		}
+		.timedata p{
+			text-align: right;
+			padding: 0 0 5px 0;
+			margin: 0;
+			font-weight: bold;
+		}
+		.fz14{
+			font-size: 16px;
+		}
+		.fz22{
+			font-size: 22px
+		}
+		.default-time{
+			color: #cecece;
+		}
+		.light-time{
+			color: #6cbfee;
+		}
+		.deep-time{
+			color: #3594cb;
+		}
+		.timenode{
+			width: 30px;
+			height: 30px;
+			background-color: #3594cb;
+			border-radius: 50%;
+			position: absolute;
+			border: 10px solid #6cbfee;
+			top: 0;
+			left: 130px;
+		}
+		.timecontant{
+			padding: 10px;
+			border-radius: 4px;
+			color: #fff;
+			margin: 0 0 50px 210px;
+		}
+		.deep:before{
+			content: '';
+			border-top: 8px solid transparent;
+			border-bottom: 8px solid transparent;
+			border-right: 11px solid #3594cb;
+			border-radius: 1px;
+			position: absolute;
+			left: 200px;
+		}
+		.light:before{
+			content: '';
+			border-top: 8px solid transparent;
+			border-bottom: 8px solid transparent;
+			border-right: 11px solid #6cbfee;
+			border-radius: 2px;
+			position: absolute;
+			left: 200px;
+		}
+		.deep{
+			background-color: #3594cb;
+		}
+		.light{
+			background-color: #6cbfee;
+		}
+		.hr{
+			width: 100%;
+			height: 1px;
+			background-color: #fff;
+			margin: 10px 0;
+		}
+		</style>
+	</head>
+	<body>
+	 <div class="wrapper">
+	 	<ul class="timeline">
+	 		<li>
+				<div class="timedata">
+					<p class="default-time fz14">2013</p>
+					<p class="deep-time fz22">11</p>
+				</div>
+				<div class="timenode"></div>
+	 			<div class="timecontant deep">
+	 				Caulie dandelion maize lentil collard greens radish arugula
+	 				<div class="hr"></div>
+	 				Caulie dandelion maize lentil collard greens radish arugula sweet pepper water spinach kombu courgette lettuce. Celery coriander bitterleaf epazote radicchio shallot winter purslane collard greens spring onion squash lentil. Artichoke salad bamboo shoot black-eyed pea brussels sprout garlic kohlrabi.
+	 			</div>
+	 		</li>
+	 		<li>
+				<div class="timedata">
+					<p class="default-time fz14">2014</p>
+					<p class="deep-time fz22">02</p>
+				</div>
+				<div class="timenode"></div>
+	 			<div class="timecontant light">
+	 				Caulie dandelion maize lentil collard greens radish arugula 
+	 				<div class="hr"></div>
+	 				sweet pepper water spinach kombu courgette lettuce. Celery coriander bitterleaf epazote radicchio shallot winter purslane collard greens spring onion squash lentil. Artichoke salad bamboo shoot black-eyed pea brussels sprout garlic kohlrabi.bitterleaf epazote radicchio shallot winter purslane collard greens spring onion squash lentil. Artichoke salad bamboo shoot black-eyed pea brussels sprout garlic kohlrabi.
+	 			</div>
+	 		</li>
+	 		<li>
+				<div class="timedata">
+					<p class="default-time fz14">2013</p>
+					<p class="deep-time fz22">11</p>
+				</div>
+				<div class="timenode"></div>
+	 			<div class="timecontant deep">
+	 				Caulie dandelion maize lentil collard greens radish arugula sweet pepper water spinach kombu courgette lettuce. Celery coriander bitterleaf epazote radicchio shallot winter purslane collard greens spring onion squash lentil. Artichoke salad bamboo shoot black-eyed pea brussels sprout garlic kohlrabi.
+	 			</div>
+	 		</li>
+	 		<li>
+				<div class="timedata">
+					<p class="default-time fz14">2014</p>
+					<p class="deep-time fz22">02</p>
+				</div>
+				<div class="timenode"></div>
+	 			<div class="timecontant light">
+	 				Caulie dandelion maize lentil collard greens radish arugula sweet pepper water spinach kombu courgette lettuce. Celery coriander bitterleaf epazote radicchio shallot winter purslane collard greens spring onion squash lentil. Artichoke salad bamboo shoot black-eyed pea brussels sprout garlic kohlrabi.bitterleaf epazote radicchio shallot winter purslane collard greens spring onion squash lentil. Artichoke salad bamboo shoot black-eyed pea brussels sprout garlic kohlrabi.
+	 			</div>
+	 		</li>
+	 	</ul>
+	 </div>
+	</body>
+</html>
